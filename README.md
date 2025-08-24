@@ -1,32 +1,45 @@
-# 5G-Network-Quality-of-Serviceofprediction
-5G Quality of Service (QoS) Dataset and Analysis
-Project Overview
-This repository provides a comprehensive dataset and analysis pipeline for evaluating Quality of Service (QoS) in 5G networks. The dataset logs resource allocation and service metrics across a variety of applications (video calls, streaming, emergency services, gaming, IoT, web browsing, etc.) to study how different user scenarios impact network performance and resource management.
+📡 5G Quality of Service (QoS) Dataset and Analysis
+📌 Overview
 
-Dataset Description
-The CSV file, Quality-of-Service-5G.csv, contains time-stamped observations including:
+This project provides a dataset and analysis pipeline for evaluating Quality of Service (QoS) in 5G networks.
+The dataset captures resource allocation and service metrics across various applications such as video calls, streaming, emergency services, gaming, IoT, and web browsing.
 
-Timestamp: Date and time of the record
+The goal is to study how different user scenarios impact network performance and resource management.
 
-User_ID: Unique identifier for each user/session
+📂 Dataset Description
 
-Application_Type: Type of network use (e.g., video call, streaming, emergency service, etc.)
+The dataset (Quality-of-Service-5G.csv) contains time-stamped observations with the following fields:
 
-Signal_Strength: Received signal strength in dBm
+⏱ Timestamp – Date and time of the record
 
-Latency: End-to-end network latency in milliseconds
+👤 User_ID – Unique identifier for each user/session
 
-Required_Bandwidth: Minimum bandwidth required (Kbps/Mbps)
+📱 Application_Type – Type of network use (e.g., Video Call, Streaming, Emergency Service, Gaming, IoT, Web Browsing)
 
-Allocated_Bandwidth: Bandwidth assigned by the network (Kbps/Mbps)
+📶 Signal_Strength – Received signal strength (dBm)
 
-Resource_Allocation: Percentage of network resources allocated to the session
+⏳ Latency – End-to-end network latency (ms)
 
-Use Cases
-Data Analysis: Assess how resource allocation varies by application, signal strength, or latency.
+📊 Required_Bandwidth – Minimum bandwidth required (Kbps/Mbps)
 
-Machine Learning: Train models to predict resource allocation based on network conditions and user/application types.
+📊 Allocated_Bandwidth – Bandwidth allocated by the network (Kbps/Mbps)
 
-Service Categorization: Bin resource allocation values into categories ("Low", "Medium", "High") for classification and statistical analysis.
+⚡ Resource_Allocation – Percentage of network resources assigned to the session
 
-Network Optimization: Support research on dynamic resource allocation strategies in 5G networks for improved QoS.
+🚀 Use Cases
+
+Data Analysis → Study how resource allocation varies by application type, signal strength, and latency
+
+Machine Learning → Train supervised models to predict resource allocation given network conditions and user/application type
+
+Service Categorization → Bin Resource_Allocation into categories (e.g., Low, Medium, High) for classification tasks
+
+Network Optimization → Support research on dynamic resource allocation strategies in 5G networks to improve QoS
+
+📈 Example Applications
+
+Predicting QoS levels (Good / Moderate / Poor) using supervised ML
+
+Analyzing bandwidth allocation fairness across application types
+
+Building dashboards to visualize 5G performance trends
